@@ -1,7 +1,10 @@
-project_name
+Fast Food Tracker
 ==============================
 
-A short description of the project.
+This is a streamlit-based web app designed to help you find menu items from 6 popular fash food chains based on your specific nutritionary needs! 
+
+Users can sort by an array of common dietary restrictions, such as low calorie, weight loss, low carb, high protein, etc. After determining their nutritionary specifications, users can view their filtered menu items and download the list to a csv file for later review.
+
 
 Project Organization
 ------------
