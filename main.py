@@ -22,7 +22,7 @@ def main():
     def load_data():
         return pd.read_csv('data/processed/cleaned_df_02.csv')
 
-    df = load_data()
+    df = load_data().round()
 
     st.title("Fast Food Nutrition Calculator")
 
@@ -89,6 +89,13 @@ def main():
         st.dataframe(filtered_df)
 
     st.write(f"Found {len(filtered_df)} items based on your preferences.")
+    csv = filtered_df.to_csv(index=False)
+    st.download_button(
+        label="Click HERE to Download your Results!",
+        data=csv,
+        file_name="filtered_data.csv",
+        mime="text/csv"
+    )
 
 
 if __name__ == '__main__':
