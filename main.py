@@ -26,7 +26,7 @@ def main():
 
     st.title("Fast Food Nutrition Calculator")
 
-    st.write("This app will calculate the nutrition of your next fast food meal.")
+    st.write("This app will calculate the nutrition of your next fast food meal. You can find the source code [here](https://github.com/pintoza/fast_food_nutrition_tracker)")
 
     st.sidebar.title("Set Your Preferences")
 
